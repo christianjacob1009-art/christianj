@@ -391,6 +391,30 @@ footer { border-top: 1px solid var(--border); padding: 25px 0; color: var(--mute
     </div>
   </div>
 
+<style>
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 15px 0;
+  color: #aaa;
+  font-size: .8rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.marquee-track {
+  display: inline-block;
+  animation: slide 60s linear infinite;
+}
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+</style>
+
   <section class="container reveal" id="about">
     <div class="section-head">
       <div>
